@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta name="author" content="Rishik Rontala">
+  <meta name="description" content="Patchline is an interactive, synthetic digital twin of a proposed smart bandage. Simulation only; no medical use.">
+  <title>Patchline — The signal between visits</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to prototype</a>
+  <div class="page-shell">
+    <header class="masthead" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="Patchline home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>PATCHLINE<span class="brand-dot">.</span></span></a>
+      <div class="masthead-center">RESEARCH PROTOTYPE <span aria-hidden="true">/</span> 2026</div>
+      <div class="masthead-status"><span class="status-dot" aria-hidden="true"></span> SIMULATION ONLY</div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="section-index"><span class="index-bar"></span> 00 / A WOUND-SENSING DIGITAL TWIN</div>
+          <h1 id="hero-title">The signal<br><em>between</em> visits<span class="period">.</span></h1>
+          <p class="hero-lede">A proposed bandage that watches four wound-environment signals and shows how a bounded orchestrator could respond. Explore the entire loop with synthetic data.</p>
+          <div class="hero-action-row">
+            <a class="primary-link" href="#prototype">Explore prototype <span aria-hidden="true">↗</span></a>
+            <span class="hero-fineprint">No sensors connected. No treatment delivered.</span>
+          </div>
+        </div>
+        <div class="patch-panel" role="img" aria-label="Diagram of a conceptual smart bandage with four virtual sensor channels">
+          <div class="patch-panel-head"><span>PL–01 / CONCEPT PATCH</span><span>FIG. A</span></div>
+          <div class="patch-visual">
+            <div class="patch-label patch-label-t"><span class="callout-line"></span><span>01&nbsp; TEMPERATURE</span></div>
+            <div class="patch-label patch-label-m"><span class="callout-line"></span><span>02&nbsp; MOISTURE</span></div>
+            <div class="patch-label patch-label-p"><span class="callout-line"></span><span>03&nbsp; FLUID pH</span></div>
+            <div class="patch-label patch-label-g"><span class="callout-line"></span><span>04&nbsp; FLUID GLUCOSE*</span></div>
+            <div class="patch-shape">
+              <div class="patch-wing patch-wing-left"></div>
+              <div class="patch-core">
+                <div class="patch-core-grid"></div>
+                <div class="patch-center">
+                  <div class="patch-ring patch-ring-a"></div><div class="patch-ring patch-ring-b"></div>
+                  <div class="patch-cross">+</div>
+                  <span class="node node-t"></span><span class="node node-m"></span><span class="node node-p"></span><span class="node node-g"></span>
+                </div>
+              </div>
+              <div class="patch-wing patch-wing-right"></div>
+            </div>
+          </div>
+          <div class="patch-panel-foot"><span>VIRTUAL BOARD / SENSOR LAYOUT</span><span>*EXPERIMENTAL, ARBITRARY UNITS</span></div>
+        </div>
+      </section>
+
+      <div class="safety-band"><span class="safety-sign">!</span><span><strong>Proof of system design.</strong> Every reading, score, and proposed actuation state below is simulated. Patchline cannot diagnose infection or choose care.</span><a href="#boundaries">View boundaries ↗</a></div>
+
+      <section id="prototype" class="prototype-section" aria-labelledby="prototype-title">
+        <div class="section-heading">
+          <div><div class="section-index"><span class="index-bar"></span> 01 / INTERACTIVE PROTOTYPE</div><h2 id="prototype-title">A scenario, <em>all the way through.</em></h2></div>
+          <p>Choose a synthetic trace. Adjust the last sample to see the quality gate and simulated decision update.</p>
+        </div>
+
+        <div class="scenario-bar" role="group" aria-label="Synthetic scenario">
+          <div class="scenario-label">SELECT A TRACE <span>↘</span></div>
+          <div class="scenario-controls">
+            <button type="button" class="scenario-button" data-scenario="stable" aria-pressed="true"><span class="scenario-number">01</span><span>Stable</span><span class="scenario-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scenario-button" data-scenario="change" aria-pressed="false"><span class="scenario-number">02</span><span>Pattern change</span><span class="scenario-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scenario-button" data-scenario="fault" aria-pressed="false"><span class="scenario-number">03</span><span>Sensor fault</span><span class="scenario-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+
+        <div class="workbench">
+          <div class="trace-panel">
+            <div class="module-header"><div><span class="module-id">PL / TELEMETRY</span><h3>Four-channel signal</h3></div><div class="module-header-right"><span id="sample-count">— samples</span><span class="live-tag"><span></span> SYNTHETIC</span></div></div>
+            <div id="trace-grid" class="trace-grid" aria-live="polite"></div>
+            <p class="module-caption">* Wound-fluid glucose is an experimental signal shown in arbitrary units. It does not represent blood glucose. Traces use generated data, not patient measurements.</p>
+          </div>
+          <aside class="decision-panel" aria-labelledby="decision-title">
+            <div class="module-header module-header-dark"><div><span class="module-id">PL / ORCHESTRATOR</span><h3 id="decision-title">Control plane</h3></div><span class="decision-step">02 / 03</span></div>
+            <div class="quality-row"><span>DATA QUALITY</span><strong id="quality-value">—</strong></div>
+            <div class="score-block"><div class="score-label">SIMULATED PATTERN SCORE <button type="button" class="info-button" id="score-info" aria-label="What does simulated pattern score mean?" title="A score trained on synthetic traces; not an infection probability.">?</button></div><div class="score-value"><span id="score-value">—</span><span class="score-denominator">/100</span></div><p id="score-caption">Trained only on generated traces. Not an infection probability.</p></div>
+            <div class="decision-outcome"><span class="decision-eyebrow">BOUNDED DECISION</span><h4 id="decision-label">Loading scenario…</h4><p id="decision-rationale">The quality gate runs before the simulated orchestrator.</p></div>
+            <div class="virtual-outputs"><div class="virtual-outputs-head"><span>HYPOTHETICAL OUTPUTS</span><span>ABSTRACT 0–3 UNITS</span></div><div class="output-line"><span>Ultrasound</span><div class="level-track" id="ultrasound-track" aria-hidden="true"><i></i><i></i><i></i></div><strong id="ultrasound-value">0 / 3</strong></div><div class="output-line"><span>Violet light</span><div class="level-track" id="violet-track" aria-hidden="true"><i></i><i></i><i></i></div><strong id="violet-value">0 / 3</strong></div><p>Visualization only. No power, exposure time, wavelength, or device setting is represented.</p></div>
+          </aside>
+        </div>
+
+        <div class="tuning-panel" aria-labelledby="tune-title"><div class="tuning-intro"><span class="module-id">PL / LAST SAMPLE</span><h3 id="tune-title">Change the signal.</h3><p>Move a control to replace the final synthetic reading. Choose a scenario to reset it.</p><button type="button" id="reset-controls" class="text-button">Reset last sample ↺</button></div><div id="manual-controls" class="manual-controls"></div></div>
+      </section>
+
+      <section class="pipeline-section" aria-labelledby="pipeline-title"><div class="section-heading compact"><div><div class="section-index"><span class="index-bar"></span> 02 / THE SYSTEM</div><h2 id="pipeline-title">From signal <em>to decision.</em></h2></div><p>A proposed architecture, made inspectable in software.</p></div><div class="pipeline-grid"><div class="pipeline-item"><span class="pipeline-num">01</span><div class="pipeline-icon">◎</div><h3>Virtual patch</h3><p>Four sensor channels sampled by a firmware-like loop. No physical board in this build.</p></div><div class="pipeline-item"><span class="pipeline-num">02</span><div class="pipeline-icon">≋</div><h3>Quality gate</h3><p>Missing or implausible values interrupt the path before any proposal appears.</p></div><div class="pipeline-item"><span class="pipeline-num">03</span><div class="pipeline-icon">∿</div><h3>Trained model</h3><p>A transparent classifier learns patterns from separate, generated examples.</p></div><div class="pipeline-item"><span class="pipeline-num">04</span><div class="pipeline-icon">↗</div><h3>Bounded orchestrator</h3><p>Records, rechecks, or prepares a handoff. Outputs are disconnected illustrations.</p></div></div></section>
+
+      <section class="report-section" id="handoff" aria-labelledby="handoff-title"><div class="section-heading compact"><div><div class="section-index"><span class="index-bar"></span> 03 / REVIEWABLE OUTPUT</div><h2 id="handoff-title">The evidence <em>travels with it.</em></h2></div><button type="button" class="print-button" id="print-report">Print one-page report <span aria-hidden="true">↗</span></button></div><div class="report-layout"><div class="report-main"><div class="report-meta"><span>PATCHLINE / SYNTHETIC HANDOFF</span><span id="report-scenario">SCENARIO —</span></div><h3 id="report-headline">Awaiting scenario</h3><p id="report-summary">The handoff will summarize the generated readings and bounded decision.</p><div class="claim-list" id="claim-list"></div></div><aside class="report-side"><span class="module-id">MODEL PROVENANCE</span><p>Trained on <strong id="train-count">—</strong> generated examples and checked on <strong id="test-count">—</strong> separate generated examples.</p><div class="metric-row"><span>HELD-OUT SYNTHETIC ACCURACY</span><strong id="metric-accuracy">—</strong></div><div class="metric-row"><span>HELD-OUT SYNTHETIC RECALL</span><strong id="metric-recall">—</strong></div><p class="small-muted">These metrics describe synthetic labels only. They do not validate infection detection in people.</p><div class="event-log-title">FIRMWARE-LIKE EVENT LOG</div><ol id="event-log" class="event-log"></ol></aside></div></section>
+
+      <section class="boundaries" id="boundaries"><div class="section-index"><span class="index-bar"></span> 04 / BOUNDARIES</div><div class="boundary-layout"><h2>Built to be<br><em>questioned.</em></h2><div><p>Patchline has no physical sensors, therapy device, or patient data. A synthetic pattern score is not an infection diagnosis. The displayed 0–3 outputs are arbitrary visualization tokens and cannot be translated into a safe treatment dose.</p><p>For a real wound, clinical evaluation remains essential. This research prototype is for technical demonstration only.</p><div class="boundary-links"><a href="./LIMITATIONS.md">Read limitations ↗</a><a href="./MODEL_CARD.md">Read model card ↗</a></div></div></div></section>
+    </main>
+    <footer class="footer"><span>PATCHLINE<sup>®</sup> / CONCEPT PROTOTYPE</span><span>Built by Rishik Rontala</span><a href="#top">Back to top ↑</a></footer>
+  </div>
+</body>
+</html>
