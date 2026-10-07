@@ -8,7 +8,9 @@
 
 **Submission state:** Materials ready and verified; the Devpost entry itself has not been submitted.
 
-**Working artifact links:** [Interactive prototype](https://rishikrrontala-bot.github.io/patchline/) · [86-second silent video](https://rishikrrontala-bot.github.io/patchline/demo.html) · [GitHub source](https://github.com/rishikrrontala-bot/patchline) · [one-page project PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-One-Page.pdf) · [complete code PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-Code.pdf).
+**Working artifact links:** [Interactive prototype](https://rishikrrontala-bot.github.io/patchline/) · [86-second silent video preview](https://rishikrrontala-bot.github.io/patchline/demo.html) · [GitHub source](https://github.com/rishikrrontala-bot/patchline) · [one-page project PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-One-Page.pdf) · [complete code PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-Code.pdf).
+
+**Video field:** [Devpost requires a YouTube, Vimeo, or Youku URL](https://help.devpost.com/article/85-uploading-a-demo-video); the self-hosted preview URL above will not work in that field. Upload `Patchline-Demo.mp4` as Public or Unlisted and add that URL before submitting.
 
 **Gallery images:** Use `Patchline-Cover.png` first and `Patchline-Fault-State.png` second from this `submission/` folder. Both are screenshots of the working app.
 
@@ -63,10 +65,11 @@ Patchline is a technical demonstration, not a medical device. It cannot diagnose
 ## Link checklist before submitting
 
 - [x] Interactive prototype URL
-- [x] Public demonstration video page and MP4
+- [x] Finished public demonstration video preview and MP4
 - [x] Public GitHub repository
 - [x] One-page project PDF
 - [x] Complete source-code PDF
 - [x] Two gallery screenshots
-- [ ] Paste the materials into the Devpost form and confirm its video field accepts the public demo page. If the field requires YouTube or Vimeo, upload `Patchline-Demo.mp4` as Public or Unlisted and use that URL.
+- [ ] Upload `Patchline-Demo.mp4` to YouTube, Vimeo, or Youku as Public or Unlisted, then paste its URL into Devpost's video field.
+- [ ] Paste the prototype, repository, and PDF links into the Devpost form.
 - [ ] Submit the final entry and verify its public project page.
