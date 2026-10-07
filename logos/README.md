@@ -7,3 +7,5 @@ All six SVGs are transparent, font independent vectors using the Patchline paper
 3. **Quality gate** — three incoming channels terminate at a prominent gate, reflecting the product's quality hold behavior.
 
 Colors: paper `#F4F1EA`, ink `#151A18`, signal orange `#CE5B3A`. SVG backgrounds are transparent; place on paper or another suitably contrasting light surface.
+
+The two `study-*.png` files are early image-generated explorations. Use the SVGs for final branding; they remain sharp at any size.
