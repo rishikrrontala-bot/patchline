@@ -14,7 +14,7 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000`. Choose **Stable**, **Pattern change**, and **Sensor fault**. Click a handoff claim to highlight its source readings. Use **Print report** to save a PDF from the browser.
 
-The [86-second silent demo](demo.html) shows the complete interaction. The [one-page project brief](submission/Patchline-One-Page.pdf) is ready for the hackathon entry.
+The [live prototype](https://rishikrrontala-bot.github.io/patchline/) can be opened without installing anything. The [86-second silent demo](https://rishikrrontala-bot.github.io/patchline/demo.html) shows the complete interaction. The [one-page project brief](submission/Patchline-One-Page.pdf) and [complete source-code PDF](submission/Patchline-Code.pdf) are ready for the hackathon entry.
 
 Run the deterministic checks with:
 

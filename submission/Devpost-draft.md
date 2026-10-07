@@ -6,7 +6,9 @@
 
 **Built by:** Rishik Rontala
 
-**Submission state:** Draft copy. Add the actual prototype, video, repository, and one-page PDF links only after those artifacts are available. Verify every feature in the final build before posting.
+**Submission state:** Materials ready and verified; the Devpost entry itself has not been submitted.
+
+**Working artifact links:** [Interactive prototype](https://rishikrrontala-bot.github.io/patchline/) · [86-second silent video](https://rishikrrontala-bot.github.io/patchline/demo.html) · [GitHub source](https://github.com/rishikrrontala-bot/patchline) · [one-page project PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-One-Page.pdf) · [complete code PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-Code.pdf).
 
 ## Inspiration
 
@@ -58,8 +60,10 @@ Patchline is a technical demonstration, not a medical device. It cannot diagnose
 
 ## Link checklist before submitting
 
-- [ ] Interactive prototype URL or accessible local demo package
-- [ ] Public or unlisted demonstration video URL
-- [ ] Public source repository URL or required code artifact
-- [ ] One-page project PDF
-- [ ] Final copy checked against the actual build and event form
+- [x] Interactive prototype URL
+- [x] Public demonstration video page and MP4
+- [x] Public GitHub repository
+- [x] One-page project PDF
+- [x] Complete source-code PDF
+- [ ] Paste the materials into the Devpost form and confirm its video field accepts the public demo page. If the field requires YouTube or Vimeo, upload `Patchline-Demo.mp4` as Public or Unlisted and use that URL.
+- [ ] Submit the final entry and verify its public project page.
