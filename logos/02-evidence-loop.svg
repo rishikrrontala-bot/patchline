@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="96" viewBox="0 0 450 96" role="img" aria-labelledby="title desc">
+  <title id="title">Patchline — evidence loop logo</title>
+  <desc id="desc">One continuous angular path leads from a source marker around the outer record and back to an inspectable inner endpoint.</desc>
+  <path d="M22 24H72V72H26V49H55" fill="none" stroke="#151A18" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+    <rect x="17.5" y="19.5" width="9" height="9" fill="#CE5B3A"/>
+    <rect x="50.5" y="44.5" width="9" height="9" fill="#CE5B3A"/>
+    <g fill="#151A18" transform="translate(110 67) scale(.06 -.06)">
+      <path d="M226 378V592H348Q375 592 400.0 588.0Q425 584 444.0 572.5Q463 561 474.5 540.0Q486 519 486 485Q486 451 474.5 430.0Q463 409 444.0 397.5Q425 386 400.0 382.0Q375 378 348 378ZM69 714V0H226V256H391Q458 256 505.0 275.5Q552 295 581.5 327.0Q611 359 624.5 400.5Q638 442 638 485Q638 529 624.5 570.0Q611 611 581.5 643.0Q552 675 505.0 694.5Q458 714 391 714Z" transform="translate(0 0)"/>
+      <path d="M249 276 342 538H344L434 276ZM264 714 -6 0H152L208 159H475L529 0H692L425 714Z" transform="translate(597 0)"/>
+      <path d="M227 582V0H384V582H598V714H13V582Z" transform="translate(1212 0)"/>
+      <path d="M545 474H697Q690 536 663.0 584.0Q636 632 594.5 664.5Q553 697 500.5 714.0Q448 731 389 731Q307 731 241.5 702.0Q176 673 131.0 622.0Q86 571 62.0 502.5Q38 434 38 354Q38 276 62.0 208.5Q86 141 131.0 91.0Q176 41 241.5 12.5Q307 -16 389 -16Q455 -16 510.0 4.0Q565 24 606.0 62.0Q647 100 672.0 154.0Q697 208 703 275H551Q542 203 501.5 159.0Q461 115 389 115Q336 115 299.0 135.5Q262 156 239.0 190.0Q216 224 205.5 266.5Q195 309 195 354Q195 401 205.5 445.0Q216 489 239.0 523.5Q262 558 299.0 578.5Q336 599 389 599Q418 599 444.5 589.5Q471 580 492.0 563.0Q513 546 527.0 523.5Q541 501 545 474Z" transform="translate(1753 0)"/>
+      <path d="M69 714V0H226V308H515V0H672V714H515V440H226V714Z" transform="translate(2424 0)"/>
+      <path d="M69 714V0H574V132H226V714Z" transform="translate(3095 0)"/>
+      <path d="M69 714V0H226V714Z" transform="translate(3618 0)"/>
+      <path d="M69 714V0H216V478H218L515 0H672V714H525V235H523L225 714Z" transform="translate(3843 0)"/>
+      <path d="M69 714V0H611V132H226V307H572V429H226V582H603V714Z" transform="translate(4514 0)"/>
+    </g>
+    <circle cx="432" cy="64.3" r="4.4" fill="#CE5B3A"/>
+</svg>

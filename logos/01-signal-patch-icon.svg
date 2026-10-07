@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Patchline — signal patch icon</title>
+  <desc id="desc">A refined tilted patch frame with three sensor channels and the central channel in signal orange.</desc>
+  <g transform="rotate(-8 48 48)">
+      <rect x="16" y="16" width="64" height="64" fill="none" stroke="#151A18" stroke-width="3.5"/>
+      <path d="M29 32H39L34 65H24Z" fill="#151A18"/>
+      <path d="M45 26H55L49 70H39Z" fill="#CE5B3A"/>
+      <path d="M62 34H72L67 63H57Z" fill="#151A18"/>
+    </g>
+</svg>
