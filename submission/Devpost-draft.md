@@ -10,6 +10,8 @@
 
 **Working artifact links:** [Interactive prototype](https://rishikrrontala-bot.github.io/patchline/) · [86-second silent video](https://rishikrrontala-bot.github.io/patchline/demo.html) · [GitHub source](https://github.com/rishikrrontala-bot/patchline) · [one-page project PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-One-Page.pdf) · [complete code PDF](https://rishikrrontala-bot.github.io/patchline/submission/Patchline-Code.pdf).
 
+**Gallery images:** Use `Patchline-Cover.png` first and `Patchline-Fault-State.png` second from this `submission/` folder. Both are screenshots of the working app.
+
 ## Inspiration
 
 A future smart bandage might observe a wound between appointments. But a changing reading is not the same thing as an infection, and a failing sensor can make an apparently confident system dangerous. I wanted to explore the harder part of autonomy: **can the control loop show its evidence and stop when that evidence is weak?**
@@ -65,5 +67,6 @@ Patchline is a technical demonstration, not a medical device. It cannot diagnose
 - [x] Public GitHub repository
 - [x] One-page project PDF
 - [x] Complete source-code PDF
+- [x] Two gallery screenshots
 - [ ] Paste the materials into the Devpost form and confirm its video field accepts the public demo page. If the field requires YouTube or Vimeo, upload `Patchline-Demo.mp4` as Public or Unlisted and use that URL.
 - [ ] Submit the final entry and verify its public project page.
